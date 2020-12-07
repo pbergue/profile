@@ -1,0 +1,35 @@
+.head-content {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.banner-custom {
+  background-color: #002C47;
+  width: 80%;
+  height: 456px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 456px;
+  margin: 0 4%;
+}
+
+#picto-contact {
+  width: 44px;
+  height: 44px;
+}
+
+#picto-contact path {
+  fill: #002C47;
+}
+
+#picto-contact:hover {
+  path {
+    fill: #DC3444;
+  }
+}

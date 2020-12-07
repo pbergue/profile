@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+@import 'components/navbar.css';
+@import 'components/banner.css';
+
+body {
+  font-family: 'Sen', sans-serif;
+  background-color: #DBE2E8;
+}
+
+h1, h2 {
+  color: #DBE2E8;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+.red-color {
+  color: #DC3444 !important;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+  color:#DC3444;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 960px) {
+
+}
+@media (max-width: 720px) {
+
+}
+@media (max-width: 540px) {
+
+}
