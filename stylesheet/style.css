@@ -81,7 +81,15 @@
 
 #bg-wave-1 {
   width: 1200px;
-  height: auto; }
+  height: auto;
+  transform: rotate(-0.35turn);
+  position: relative;
+  right: 0; }
+
+#bg-wave-2 {
+  width: 1200px;
+  height: auto;
+  transform: rotate(-0.35turn); }
 
 body {
   font-family: 'Sen', sans-serif;
