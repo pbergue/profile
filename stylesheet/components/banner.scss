@@ -4,10 +4,17 @@
   margin-top: 50px;
 }
 
+.title-banner {
+  margin-right: 8%;
+}
+
 .banner-custom {
   background-color: #002C47;
   width: 80%;
   height: 456px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts {
@@ -32,4 +39,20 @@
   path {
     fill: #DC3444;
   }
+}
+
+#avatar {
+  width: 362px;
+  height: 362px;
+  path {
+    fill: #DBE2E8;
+  }
+  circle {
+    fill: #DBE2E8;
+  }
+}
+
+#bg-wave-1 {
+  width:1200px;
+  height: auto;
 }

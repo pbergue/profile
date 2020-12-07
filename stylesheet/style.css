@@ -15,7 +15,8 @@
 .navbar-links h4 {
   color: #DC3444;
   margin: 0 24px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  font-weight: 400 !important; }
 
 .logo {
   width: 50%;
@@ -41,10 +42,16 @@
   width: 100%;
   margin-top: 50px; }
 
+.title-banner {
+  margin-right: 8%; }
+
 .banner-custom {
   background-color: #002C47;
   width: 80%;
-  height: 456px; }
+  height: 456px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .contacts {
   display: flex;
@@ -63,6 +70,18 @@
 
 #picto-contact:hover path {
   fill: #DC3444; }
+
+#avatar {
+  width: 362px;
+  height: 362px; }
+  #avatar path {
+    fill: #DBE2E8; }
+  #avatar circle {
+    fill: #DBE2E8; }
+
+#bg-wave-1 {
+  width: 1200px;
+  height: auto; }
 
 body {
   font-family: 'Sen', sans-serif;
