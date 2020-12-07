@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+@import 'components/navbar.scss';
+@import 'components/banner.scss';
+
+body {
+  font-family: 'Sen', sans-serif;
+  background-color: #DBE2E8;
+}
+
+h1, h2 {
+  color: #DBE2E8;
+  font-weight: 400 !important;
+}
+
+h4 {
+  font-size: 26px;
+}
+.space-letter {
+  letter-spacing: 5px !important;
+}
+
+a p {
+  color: #DBE2E8;
+}
+
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+.red-color {
+  color: #DC3444 !important;
+}
+
+.white-color {
+  color: #DBE2E8;
+}
+
+.contacts a:hover {
+  text-decoration: none;
+  path {
+    fill: #DC3444;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 960px) {
+
+};
+@media (max-width: 720px) {
+
+};
+@media (max-width: 540px) {
+
+};
