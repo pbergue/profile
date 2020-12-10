@@ -2,6 +2,7 @@
 
 @import 'components/navbar.scss';
 @import 'components/banner.scss';
+@import 'components/content.scss';
 
 body {
   font-family: 'Sen', sans-serif;
@@ -17,7 +18,7 @@ h4 {
   font-size: 26px;
 }
 .space-letter {
-  letter-spacing: 5px !important;
+  letter-spacing: 4px !important;
 }
 
 a p {

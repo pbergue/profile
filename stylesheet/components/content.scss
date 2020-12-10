@@ -1,0 +1,88 @@
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.content-custom {
+  width: 100%;
+  padding: 25px 0;
+  background-color: #002C47;
+}
+
+.tabs-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+  margin-top: 60px;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color:  #DC3444;
+    letter-spacing: 0.2em;
+    font-size: 50px;
+  }
+}
+
+.description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 80px;
+  text-align: justify;
+  p {
+    color: #DBE2E8;
+    font-size: 18px;
+  }
+}
+
+.first-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#icon-skills {
+  height: 112px;
+  width: 112px;
+  margin: 0 10px;
+}
+
+#icon-skills-js {
+  height: 87px;
+  width: 87px;
+  margin: 15px 15px 0 15px;
+}
+
+#rails-logo {
+  width: 284px;
+  height: 107px;
+}

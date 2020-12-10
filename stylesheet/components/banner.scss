@@ -5,11 +5,13 @@
 }
 
 .title-banner {
-  margin-right: 8%;
+  margin-right: 10%;
+  margin-bottom: 4%;
+  letter-spacing: 1px;
+
 }
 
 .banner-custom {
-  background-color: #002C47;
   width: 80%;
   height: 456px;
   display: flex;
@@ -24,6 +26,12 @@
   align-items: center;
   height: 456px;
   margin: 0 4%;
+}
+
+.link-about {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
 }
 
 #picto-contact {
@@ -44,6 +52,7 @@
 #avatar {
   width: 362px;
   height: 362px;
+  opacity: 0.7;
   path {
     fill: #DBE2E8;
   }
@@ -52,12 +61,21 @@
   }
 }
 
+.wave-1 {
+  position: absolute;
+}
+
 #bg-wave-1 {
   width:1200px;
   height: auto;
   transform: rotate(-0.35turn);
   position: relative;
-  right: 0;
+  right: -500px;
+  overflow: scroll;
+  opacity: 0.1;
+  path {
+    fill: #DBE2E8;
+  }
 }
 
 #bg-wave-2 {
