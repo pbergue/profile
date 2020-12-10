@@ -18,6 +18,23 @@
   letter-spacing: 2px;
   font-weight: 400 !important; }
 
+.navbar-links h3 {
+  color: #DC3444;
+  font-size: 26px;
+  margin: 0 24px;
+  letter-spacing: 2px;
+  font-weight: 400 !important; }
+
+.navbar-links h4:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px #DC3444;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out; }
+
+.navbar-links h4:hover:after {
+  transform: scaleX(0.9); }
+
 .logo {
   width: 50%;
   display: flex;
@@ -35,7 +52,13 @@
   border: 2px solid #DC3444;
   border-radius: 3px;
   padding: 8px 16px;
-  width: 148px; }
+  width: 148px;
+  transition: 0.2s; }
+
+#btn-hire:hover {
+  background-color: #DC3444;
+  color: #DBE2E8;
+  transition: 0.2s; }
 
 .head-content {
   display: flex;
@@ -66,6 +89,16 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 5%; }
+
+#after-effect:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px #DC3444;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out; }
+
+#after-effect:hover:after {
+  transform: scaleX(0.9); }
 
 #picto-contact {
   width: 44px;
@@ -136,7 +169,8 @@
 .background {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 150px; }
 
 .title {
   width: 50%;
@@ -160,6 +194,14 @@
     color: #DBE2E8;
     font-size: 18px; }
 
+.description-passions {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 80px;
+  text-align: justify; }
+
 .first-line {
   display: flex;
   justify-content: center;
@@ -179,6 +221,39 @@
 #rails-logo {
   width: 284px;
   height: 107px; }
+
+#picto-passions {
+  width: 100px;
+  height: 100px;
+  margin-right: 55px;
+  transition: 0.2s; }
+  #picto-passions path {
+    fill: #DBE2E8; }
+  #picto-passions circle {
+    fill: #DBE2E8; }
+
+#picto-passions:hover {
+  transition: 0.2s; }
+  #picto-passions:hover path {
+    fill: #DC3444; }
+  #picto-passions:hover circle {
+    fill: #DC3444; }
+
+#myTab p {
+  color: #DC3444;
+  font-size: 38px;
+  margin: 0; }
+
+.nav-item > .nav-link {
+  background-color: transparent;
+  border: none; }
+
+.nav-item > .nav-link.active {
+  border-bottom: solid 2px #002C47;
+  background-color: transparent; }
+
+.nav-link:hover p {
+  color: #002C47 !important; }
 
 body {
   font-family: 'Sen', sans-serif;

@@ -20,6 +20,27 @@
   font-weight: 400 !important;
 }
 
+.navbar-links h3 {
+  color: #DC3444;
+  font-size: 26px;
+  margin: 0 24px;
+  letter-spacing: 2px;
+  font-weight: 400 !important;
+}
+
+.navbar-links h4:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #DC3444;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.navbar-links h4:hover:after {
+  transform: scaleX(0.9);
+}
+
+
 .logo {
   width: 50%;
   display: flex;
@@ -41,4 +62,11 @@
   border-radius: 3px;
   padding: 8px 16px;
   width: 148px;
+  transition: 0.2s;
+}
+
+#btn-hire:hover {
+  background-color: #DC3444;
+  color: #DBE2E8;
+  transition: 0.2s;
 }

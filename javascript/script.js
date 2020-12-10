@@ -1,15 +1,11 @@
-const tabChanging = () => {
-  const tabs = document.getElementById('myTab').getElementsByClassName('nav-link');
-  [...tabs].forEach((tab) => {
-    tab.addEventListener('click', (event) => {
-      event.preventDefault();
-      const activeClass = document.querySelector('.active');
-      const selectedTab = event.currentTarget;
-      console.log(activeClass);
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
-
-      activeClass.classList.remove("active");
-      selectedTab.classList.add('active');
-    });
-  });
-};
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).attr("title")).select();
+  document.execCommand("copy");
+  $temp.remove();
+}

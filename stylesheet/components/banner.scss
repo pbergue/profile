@@ -34,6 +34,18 @@
   margin-top: 5%;
 }
 
+#after-effect:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #DC3444;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+#after-effect:hover:after {
+  transform: scaleX(0.9);
+}
+
 #picto-contact {
   width: 44px;
   height: 44px;
