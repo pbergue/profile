@@ -34,7 +34,13 @@ a:hover {
   text-decoration: none !important;
 }
 .red-color {
-  color: #DC3444 !important;
+  transition: 0.2s;
+}
+#background:hover {
+  .red-color {
+    color: #DC3444;
+    transition: 0.2s;
+  }
 }
 
 .white-color {
