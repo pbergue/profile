@@ -90,6 +90,13 @@
   justify-content: flex-end;
   margin-top: 5%; }
 
+.red-target {
+  transition: 0.2s; }
+
+#background:hover .red-target {
+  color: #DC3444;
+  transition: 0.2s; }
+
 #after-effect:after {
   display: block;
   content: '';
@@ -330,11 +337,7 @@ a:hover {
   text-decoration: none !important; }
 
 .red-color {
-  transition: 0.2s; }
-
-#background:hover .red-color {
-  color: #DC3444;
-  transition: 0.2s; }
+  color: #DC3444; }
 
 .white-color {
   color: #DBE2E8; }

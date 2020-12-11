@@ -34,6 +34,16 @@
   margin-top: 5%;
 }
 
+.red-target {
+  transition: 0.2s;
+}
+#background:hover {
+  .red-target {
+    color: #DC3444;
+    transition: 0.2s;
+  }
+}
+
 #after-effect:after {
   display:block;
   content: '';
