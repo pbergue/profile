@@ -82,6 +82,17 @@
   text-align: justify;
 }
 
+.red-target {
+  transition: 0.2s;
+}
+#background:hover {
+  .red-target {
+    color: #DC3444;
+    transition: 0.2s;
+  }
+}
+
+
 .first-line {
   display: flex;
   justify-content: center;
