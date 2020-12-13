@@ -372,4 +372,7 @@ a:hover {
   .contacts a:hover path {
     fill: #DC3444; }
 
+.hidden {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
