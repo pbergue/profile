@@ -76,7 +76,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 3px; }
 
 .contacts {
   display: flex;
@@ -193,7 +194,8 @@
   width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); }
   .title h2 {
     color: #DC3444;
     letter-spacing: 0.2em;
@@ -206,7 +208,8 @@
   justify-content: center;
   align-items: center;
   padding: 0 50px 0 80px;
-  text-align: justify; }
+  text-align: justify;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); }
   .description p {
     color: #DBE2E8;
     font-size: 18px; }

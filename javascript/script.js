@@ -28,38 +28,25 @@ const addRedClass = () => {
 };
 
 const emailCopy = () => {
-  const email = document.getElementById('email-icon');
-  email.addEventListener('click', (event) => {
-    /* Get the text field */
-    var copyText = document.querySelector('.hidden');
+  const personalInfos = document.querySelectorAll('.personal-infos');
+  personalInfos.forEach((info) => {
+    info.addEventListener('click', (event) => {
+      const copyText = event.currentTarget.dataset.originalTitle;
+      console.log(copyText);
+      const tempInput = document.createElement("input");
+      tempInput.value = copyText;
 
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
 
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
+      event.currentTarget.dataset.originalTitle = "Copied text!";
 
-    /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
+    });
 
   });
 };
 
-function myFunction() {
-  /* Get the text field */
-  var copyText = document.getElementsByClassName("hidden")[0].innerText;
-  console.log(copyText);
-
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  /* Copy the text inside the text field */
-  copyText.execCommand("copy");
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
-}
 
 emailCopy();
