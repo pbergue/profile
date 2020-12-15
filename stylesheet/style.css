@@ -248,7 +248,7 @@
   opacity: 0.5; }
 
 .height-width-custom {
-  height: 600px;
+  height: 800px;
   width: 100%;
   padding: 25px 50px;
   background-color: #002C47; }
@@ -268,8 +268,27 @@
     opacity: 0.7;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); }
 
+.title-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+  .title-portfolio h4 {
+    margin: 0; }
+
+#switch {
+  height: auto;
+  width: 40px;
+  margin-left: 15px; }
+
 figure.controls {
   width: 80% !important; }
+
+#carouselExampleIndicators {
+  transition: 0.2s; }
+  #carouselExampleIndicators:hover {
+    transform: scale(1.05);
+    transition: 0.2s; }
 
 #icon-skills {
   height: 112px;
@@ -381,6 +400,12 @@ h4 {
 
 .space-letter {
   letter-spacing: 4px !important; }
+
+.b-radius-4 {
+  border-radius: 4px; }
+
+.shadow-box-custom {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
 
 a p {
   color: #DBE2E8; }

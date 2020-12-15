@@ -114,7 +114,7 @@
 }
 
 .height-width-custom {
-  height: 600px;
+  height: 800px;
   width: 100%;
   padding: 25px 50px;
   background-color: #002C47;
@@ -140,8 +140,32 @@
   }
 }
 
+.title-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  h4 {
+    margin: 0;
+  }
+}
+
+#switch {
+  height: auto;
+  width: 40px;
+  margin-left: 15px;
+}
+
 figure.controls {
   width: 80% !important;
+}
+
+#carouselExampleIndicators {
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
 }
 
 #icon-skills {

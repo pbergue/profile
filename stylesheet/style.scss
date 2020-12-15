@@ -23,6 +23,14 @@ h4 {
   letter-spacing: 4px !important;
 }
 
+.b-radius-4 {
+  border-radius: 4px;
+}
+
+.shadow-box-custom {
+  box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
+}
+
 a p {
   color: #DBE2E8;
 }

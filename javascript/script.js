@@ -48,5 +48,35 @@ const emailCopy = () => {
   });
 };
 
+const activeClickNavbar = () => {
+  const buttons = document.querySelectorAll('.active-btns');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+      const aboutTab = document.getElementById('about-tab');
+      const portfolioTab = document.getElementById('portfolio-tab');
+
+      const aboutPane = document.getElementById('about');
+      const portfolioPane = document.getElementById('portfolio');
+      console.log(event.currentTarget);
+
+      if(event.currentTarget.id=='portfolio-btn' && aboutTab.classList.contains('active')) {
+        aboutTab.classList.remove('active');
+        portfolioTab.classList.add('active');
+
+        aboutPane.classList.remove('active');
+        portfolioPane.classList.add('active');
+
+      } else if (event.currentTarget.id=='about-btn' && portfolioTab.classList.contains('active')) {
+        portfolioTab.classList.remove('active');
+        aboutTab.classList.add('active');
+
+        portfolioPane.classList.remove('active');
+        aboutPane.classList.add('active');
+      }
+    });
+  });
+};
+
 
 emailCopy();
+activeClickNavbar();
