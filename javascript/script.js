@@ -66,7 +66,7 @@ const activeClickNavbar = () => {
         aboutPane.classList.remove('active');
         portfolioPane.classList.add('active');
 
-      } else if (event.currentTarget.id=='about-btn' && portfolioTab.classList.contains('active')) {
+      } else if (((event.currentTarget.id=='about-btn')||(event.currentTarget.id=='second-about')) && portfolioTab.classList.contains('active')) {
         portfolioTab.classList.remove('active');
         aboutTab.classList.add('active');
 
