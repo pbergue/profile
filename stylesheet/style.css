@@ -130,6 +130,9 @@
 #picto-contact:hover path {
   fill: #DC3444; }
 
+#computer:hover > svg path {
+  fill: #DC3444; }
+
 @media (min-width: 100px) and (max-width: 540px) {
   .avatar {
     display: none; } }

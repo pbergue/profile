@@ -74,6 +74,12 @@
   }
 }
 
+#computer:hover > svg {
+  path {
+    fill: #DC3444;
+  }
+}
+
 .avatar {
   @media (min-width:100px) and (max-width: 540px) {
     display: none;
