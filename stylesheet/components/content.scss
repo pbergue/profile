@@ -24,6 +24,9 @@
 }
 
 .skills {
+  @media (max-width: 960px) {
+    flex-direction: column;
+  };
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +35,9 @@
 }
 
 .background {
+  @media (max-width: 960px) {
+    flex-direction: column-reverse;
+  };
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +46,9 @@
 }
 
 .passions {
+  @media (max-width: 960px) {
+    flex-direction: column;
+  };
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +57,14 @@
 }
 
 .title {
-  width: 50%;
+  @media (min-width: 960px) {
+    width: 50%;
+  };
+  @media (max-width: 960px) {
+    width: 90%;
+    margin-bottom: 32px;
+  };
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,17 +72,27 @@
   h2 {
     color:  #DC3444;
     letter-spacing: 0.2em;
-    font-size: 50px;
+    @media (max-width: 540px) {
+      font-size: 32px;
+    };
+    @media (min-width: 540px) {
+      font-size: 50px;
+    };
   }
 }
 
 .description {
-  width: 50%;
+  @media (min-width: 960px) {
+    width: 50%;
+    padding: 0 50px 0 80px;
+  };
+  @media (max-width: 960px) {
+    width: 90%;
+  };
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 50px 0 80px;
   text-align: justify;
   text-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.4);
   p {
@@ -76,12 +102,20 @@
 }
 
 .description-passions {
-  width: 50%;
+  @media (min-width: 960px) {
+    width: 50%;
+  };
+  @media (max-width: 960px) {
+    width: 90%;
+  };
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 50px 0 80px;
   text-align: justify;
+}
+
+#picto-passions:last-child {
+  margin-right: 0;
 }
 
 .red-target {
@@ -101,6 +135,7 @@
   align-items: center;
   margin-bottom: 15px;
   overflow: hidden;
+  width: 100%;
 }
 
 .second-line {
@@ -118,6 +153,12 @@
   width: 100%;
   padding: 25px 50px;
   background-color: #002C47;
+}
+
+.row-custom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
 }
 
 .img-size {
@@ -169,13 +210,11 @@ figure.controls {
 }
 
 #icon-skills {
-  height: 112px;
   width: 112px;
   margin: 0 10px;
 }
 
 #icon-skills-js {
-  height: 87px;
   width: 87px;
   margin: 15px 15px 0 15px;
 }

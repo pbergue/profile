@@ -3,11 +3,12 @@
   height: 113px;
   background-color: #002C47;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-links {
   display: flex;
-  width: 50%;
   justify-content: flex-end;
   align-items: center;
   padding-right: 20px;
@@ -42,10 +43,10 @@
 
 
 .logo {
-  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-left: 32px;
 }
 
 #logo {
@@ -69,4 +70,16 @@
   background-color: #DC3444;
   color: #DBE2E8;
   transition: 0.2s;
+}
+
+#about-btn {
+  @media (max-width: 540px) {
+    display: none;
+  }
+}
+
+#portfolio-btn {
+  @media (max-width: 540px) {
+    display: none;
+  }
 }
