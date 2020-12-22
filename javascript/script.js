@@ -1,3 +1,40 @@
+class About {
+
+  constructor(observer) {
+      this.observer = observer
+      this.init()
+  }
+
+  init() {
+    const targets = document.querySelectorAll('.content-about');
+
+
+    targets.forEach(target => {
+        this.observer.observe(target)
+    })
+  }
+
+}
+
+var options = {
+    rootMargin: '0px',
+    threshold: 0.6
+}
+
+function callback(entries) {
+    entries.filter(el => {
+        if(el.isIntersecting) {
+            el.target.classList.add('visible');
+        }
+    })
+}
+
+
+let observer = new IntersectionObserver(callback, options);
+
+const about = new About(observer);
+
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
