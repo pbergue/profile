@@ -22,7 +22,6 @@ var options = {
 }
 
 function callback(entries) {
-  console.log(entries);
     entries.filter(el => {
         if(el.isIntersecting) {
             el.target.classList.add('visible');
@@ -117,6 +116,27 @@ const activeClickNavbar = () => {
   });
 };
 
+const computer = document.getElementById('computer');
+
+function createLink() {
+  computer.setAttribute('href', '.');
+  console.log('link created!');
+};
+
+function deployFullHeight() {
+  computer.addEventListener('click', event => {
+    const navbar = document.getElementById('navbar-profile');
+    const avatar = document.querySelector('.avatar svg');
+
+    navbar.classList.remove('navbar-full-height');
+    navbar.classList.add('navbar-custom');
+
+    avatar.id = 'avatar';
+    window.setTimeout(createLink, 5000);
+  });
+};
+
 
 emailCopy();
 activeClickNavbar();
+deployFullHeight();
