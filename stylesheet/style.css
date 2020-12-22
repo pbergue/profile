@@ -405,7 +405,8 @@ figure.controls {
   color: #002C47 !important; }
 
 .visible {
-  animation: FadeInAbout .9s forwards ease; }
+  animation: FadeInAbout .9s forwards ease;
+  transition: 0.2s; }
 
 @media (hover: hover) {
   /*

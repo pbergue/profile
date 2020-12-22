@@ -18,13 +18,16 @@ class About {
 
 var options = {
     rootMargin: '0px',
-    threshold: 0.6
+    threshold: 0.4
 }
 
 function callback(entries) {
+  console.log(entries);
     entries.filter(el => {
         if(el.isIntersecting) {
             el.target.classList.add('visible');
+        } else {
+          el.target.classList.remove('visible');
         }
     })
 }
