@@ -20,7 +20,15 @@
 }
 
 .banner-custom {
+  @media (min-width: 100px) and (max-width: 1480px) {
+    background-image: url(/images/banner-profile.jpg);
+  }
+  @media (min-width: 1480px) {
+    background-image: url(/images/banner-profile-2.jpg);
+  }
   width: 80%;
+  object-fit: cover;
+  background-repeat: no-repeat;
   height: 456px;
   display: flex;
   justify-content: center;
