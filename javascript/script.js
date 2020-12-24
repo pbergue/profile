@@ -80,7 +80,7 @@ const emailCopy = () => {
       document.execCommand("copy");
       document.body.removeChild(tempInput);
 
-      event.currentTarget.dataset.originalTitle = "Copied text!";
+      // event.currentTarget.dataset.originalTitle = "Copied text!";
 
     });
 
@@ -120,7 +120,6 @@ const computer = document.getElementById('computer');
 
 function createLink() {
   computer.setAttribute('href', '.');
-  console.log('link created!');
 };
 
 function deployFullHeight() {
@@ -131,11 +130,64 @@ function deployFullHeight() {
     navbar.classList.remove('navbar-full-height');
     navbar.classList.add('navbar-custom');
 
+    computer.classList.remove('bounce');
+
     avatar.id = 'avatar';
-    window.setTimeout(createLink, 5000);
+    window.setTimeout(createLink, 3000);
   });
 };
 
+// function([string1, string2],target id,[color1,color2])
+consoleText(['27 years old', 'Web developer', 'Available', 'Creative', 'Surfer'], 'text',['#DBE2E8']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 700)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 700)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 80)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
 
 emailCopy();
 activeClickNavbar();
