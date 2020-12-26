@@ -138,12 +138,84 @@ function deployFullHeight() {
 };
 
 // function([string1, string2],target id,[color1,color2])
-consoleText(['27 years old', 'Web developer', 'Available', 'Creative', 'Surfer'], 'text',['#DBE2E8']);
+const pictosLg = document.querySelectorAll('.pictos-lang');
+const frenchSelectors = document.querySelectorAll('.french');
+const englishSelectors = document.querySelectorAll('.english');
+
+pictosLg.forEach(picto => picto.addEventListener('click', event => {
+  console.log(event.currentTarget);
+  if (event.currentTarget.id === 'fr') {
+    frenchSelectors.forEach(french => {
+      french.classList.add('chosen-version');
+    });
+    englishSelectors.forEach(english => {
+      english.classList.remove('chosen-version');
+    });
+  } else if (event.currentTarget.id === 'en') {
+    frenchSelectors.forEach(french => {
+      french.classList.remove('chosen-version');
+    });
+    englishSelectors.forEach(english => {
+      english.classList.add('chosen-version');
+    })
+  }
+}));
+consoleText(['27 years old', 'Web developer', 'Available', 'Creative', 'Surfer'], 'text-en',['#DBE2E8']);
+consoleTextFr(['27 ans', 'Développeur Web', 'Disponible', 'Créatif', 'Surfeur'], 'text-fr',['#DBE2E8']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
   var visible = true;
-  var con = document.getElementById('console');
+  var con = document.getElementById('console-en');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 700)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 700)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 80)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+
+function consoleTextFr(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console-fr');
   var letterCount = 1;
   var x = 1;
   var waiting = false;

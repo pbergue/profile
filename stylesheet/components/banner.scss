@@ -52,6 +52,25 @@
   margin-top: 5%;
 }
 
+.language-choice {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 2vw;
+}
+
+.pictos-lang {
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+
+}
+
+#picto-lg {
+  width: 35px;
+  margin-bottom: 10px;
+}
+
 #after-effect:after {
   display:block;
   content: '';

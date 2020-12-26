@@ -49,6 +49,9 @@
   }
   .logo {
     animation: FadeInLateral 1.5s forwards ease-in;
+    h1 {
+      display: none;
+    }
   }
   .navbar-links {
     animation: FadeInLateral 1.5s forwards ease-in;

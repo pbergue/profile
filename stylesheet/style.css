@@ -41,6 +41,8 @@
     display: none; }
   .navbar-custom .logo {
     animation: FadeInLateral 1.5s forwards ease-in; }
+    .navbar-custom .logo h1 {
+      display: none; }
   .navbar-custom .navbar-links {
     animation: FadeInLateral 1.5s forwards ease-in; }
 
@@ -195,6 +197,20 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 5%; }
+
+.language-choice {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 2vw; }
+
+.pictos-lang {
+  opacity: 0.7; }
+  .pictos-lang:hover {
+    opacity: 1; }
+
+#picto-lg {
+  width: 35px;
+  margin-bottom: 10px; }
 
 #after-effect:after {
   display: block;
@@ -574,6 +590,18 @@ h1, h2 {
 
 h4 {
   font-size: 26px; }
+
+.english {
+  display: none; }
+  .english.chosen-version {
+    display: block;
+    transition: 1s ease-in-out; }
+
+.french {
+  display: none; }
+  .french.chosen-version {
+    display: block;
+    transition: 1s ease-in-out; }
 
 .opacity-change {
   opacity: 0.8; }
