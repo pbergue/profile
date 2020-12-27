@@ -124,6 +124,15 @@
 .red-target {
   transition: 0.2s;
 }
+
+.red-target-certif {
+  color: #DC3444;
+}
+
+.smaller-red {
+  opacity: 0.8;
+  font-size: 17px;
+}
 #background:hover {
   .red-target {
     color: #DC3444;
