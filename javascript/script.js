@@ -261,6 +261,55 @@ function consoleTextFr(words, id, colors) {
   }, 400)
 }
 
+const banner = document.querySelector('.banner-custom');
+const avatarMove = document.querySelector('.avatar svg');
+const walk = 30;
+
+function moveSvg(e) {
+  const {offsetWidth: width, offsetHeight: height} = banner;
+  let {offsetX: x, offsetY: y} = e;
+
+  if (this !== e.target) {
+    x = x + e.target.offsetLeft;
+    y = y + e.target.offsetTop;
+  }
+
+  // console.log(x, y);
+
+  const xWalk = Math.round((x / width * walk) - (walk / 2));
+  const yWalk = Math.round((y / height * walk) - (walk / 2));
+
+  // console.log(xWalk, yWalk);
+
+  avatarMove.style.position = 'relative';
+  avatarMove.style.top = `${yWalk}px`;
+  avatarMove.style.left = `${xWalk}px`;
+}
+
+
+const js30 = document.querySelector('.progression-percentage-js30');
+console.log(js30.innerText);
+var lang = {
+  "js30": `${js30.innerText}`
+};
+
+var multiply = 4;
+
+$.each( lang, function( language, pourcent) {
+
+  var delay = 700;
+
+  setTimeout(function() {
+    $('#'+language+'-pourcent').html(pourcent);
+  },delay*multiply);
+
+  multiply++;
+
+});
+
+
+banner.addEventListener('mousemove', moveSvg);
+
 emailCopy();
 activeClickNavbar();
 deployFullHeight();

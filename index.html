@@ -243,8 +243,6 @@
              from="154.923" to="150" dur="2s" repeatCount="indefinite" />
           <animate xlink:href="#right-eye" attributeName="cx"
           from="309.809" to="304.886" dur="2s" repeatCount="indefinite" />
-          <animate xlink:href="#whole-face" attributeName="x"
-          from="0" to="4" dur="2s" repeatCount="indefinite" />
         </svg>
       </div>
     </div>
@@ -304,6 +302,12 @@
             <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">
               <p class="english">Portfolio</p>
               <p class="french chosen-version">Portfolio</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="progression-tab" data-toggle="tab" href="#progression" role="tab" aria-controls="progression" aria-selected="false">
+              <p class="english">Progression</p>
+              <p class="french chosen-version">Progression</p>
             </a>
           </li>
         </ul>
@@ -372,7 +376,7 @@
               </div>
             </div>
           </div>
-          <hr class="custom-hr">
+          <hr class="custom-hr content-about">
           <div class="content-about background" id="background">
             <div class="description">
               <p class="english">After obtaining an <span class="red-target">engineering degree in the aeronautical field</span> at ESTACA (Laval) in 2016, I worked <span class="red-target">3 years</span> as a <span class="red-target">method and quality engineer</span> for Airbus and its subcontractors in Nantes area.
@@ -397,7 +401,7 @@
               <h2 class="effect-shine french chosen-version">HISTORIQUE</h2>
             </div>
           </div>
-          <hr class="custom-hr">
+          <hr class="custom-hr content-about">
           <div class="content-about passions">
             <div class="title">
               <h2 class="effect-shine english">PASSIONS</h2>
@@ -483,8 +487,8 @@
               </svg>
             </div>
           </div>
-          <hr class="custom-hr">
-          <div class="content-about background">
+          <hr class="custom-hr content-about">
+          <div class="content-about certif">
             <div class="description">
               <div class="english">
                 <h3><span class="red-target-certif">Web application developer <span class="smaller-red">Le Wagon, Rennes</span class="smaller-red"></span></h3>
@@ -566,6 +570,29 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane text-center" id="progression" role="tabpanel" aria-labelledby="progression-tab">
+          <div class="row-custom height-width-custom">
+            <div class="col-lg-4 col-md-12">
+              <div>
+                <div class="custom-position">
+                  <div class="title-progression">
+                    <a href="https://javascript30.com/">
+                      <h4>JavaScript30</h4>
+                    </a>
+                    <h4 class="progression-percentage-js30" id="js30-pourcent">60%</h4>
+                  </div>
+                  <div class="bar-container">
+                    <span class="progressbar progressred" id="progress"></span>
+                  </div>
+                  <h5 class="english">30 Day Vanilla JS Coding Challenge</h5>
+                  <p class="english">Daily challenges to complete in Vanilla JS (no framework)</p>
+                  <p class="french chosen-version">Challenges quotidiens réalisés en Vanilla JS (pas de frameworks)</p>
+                </div>
+                <img src="./images/Javascript30.jpg" class="progression-img" alt="JavaScript 30 days challenge">
               </div>
             </div>
           </div>

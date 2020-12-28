@@ -1,3 +1,6 @@
+$js30-width: 60%;
+
+
 .nav-buttons {
   display: flex;
   flex-direction: column;
@@ -48,6 +51,18 @@
 }
 
 .passions {
+  @media (max-width: 960px) {
+    flex-direction: column;
+  };
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 130px;
+  margin-top: 130px;
+  opacity: 0;
+}
+
+.certif {
   @media (max-width: 960px) {
     flex-direction: column;
   };
@@ -117,6 +132,47 @@
   text-align: justify;
 }
 
+.progression-img {
+  width: 100%;
+}
+
+.bar-container{
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  display: block;
+  border-radius: 5px;
+
+  .progressbar{
+    position:absolute;
+    left:0px;
+    width:0%;
+    height: 100%;
+    border-radius: 5px;
+
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  #progress{
+    -webkit-animation-name: progress-html;
+    animation-name: progress-html;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+  }
+}
+
+.progressred{background-color:#DC3444;}
+
+@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: $js30-width;}}
+@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: $js30-width;}}
+@keyframes progress-html{0%{width: 0%;} 100%{ width: $js30-width;}}
+
 #picto-passions:last-child {
   margin-right: 0;
 }
@@ -182,7 +238,7 @@
 .custom-position {
   position: relative;
 
-  h4 {
+  h4, h5 {
     color: #DC3444;
     text-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.2);
   }
@@ -197,6 +253,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  h4 {
+    margin: 0;
+  }
+}
+
+.title-progression {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   h4 {
     margin: 0;
