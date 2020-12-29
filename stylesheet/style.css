@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+.nav {
+  justify-content: center; }
+
 .navbar-full-height {
   width: 100%;
   height: 100vh;
@@ -208,7 +211,7 @@
 .link-about {
   display: flex;
   justify-content: flex-end;
-  margin-top: 5%; }
+  margin-top: 12%; }
 
 .language-choice {
   display: flex;
