@@ -626,13 +626,31 @@ figure.controls {
   border: none; }
 
 .nav-item > .nav-link.active {
-  border-bottom: solid 2px #002C47;
   background-color: transparent; }
+  .nav-item > .nav-link.active::after {
+    content: "";
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #002C47;
+    transform: scaleX(0.9); }
+  .nav-item > .nav-link.active:hover {
+    transform: translateY(0); }
+  .nav-item > .nav-link.active:hover::after {
+    transform: scaleX(0.9); }
+
+.nav-link::after {
+  content: "";
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #002C47;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out; }
+
+.nav-link:hover::after {
+  transform: scaleX(0.9); }
 
 .nav-link:hover {
   transform: translateY(-3px); }
-  .nav-link:hover p {
-    color: #a02935 !important; }
 
 .visible {
   animation: FadeInAbout .9s forwards ease;

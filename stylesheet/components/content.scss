@@ -338,15 +338,37 @@ figure.controls {
 }
 
 .nav-item > .nav-link.active {
-  border-bottom: solid 2px $blue;
   background-color: transparent;
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: solid 2px $blue;
+    transform: scaleX(0.9)
+  }
+  &:hover {
+    transform: translateY(0);
+  }
+  &:hover::after {
+    transform: scaleX(0.9);
+  }
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: solid 2px $blue;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(0.9);
 }
 
 .nav-link:hover {
   transform: translateY(-3px);
-  p {
-    color:  $dark-red !important;
-  }
 }
 
 .visible {
