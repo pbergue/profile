@@ -160,9 +160,15 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
-  #progress{
-    -webkit-animation-name: progress-html;
-    animation-name: progress-html;
+  #progress-js30{
+    -webkit-animation-name: progress-js30;
+    animation-name: progress-js30;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+  }
+  #progress-rr{
+    -webkit-animation-name: progress-rr;
+    animation-name: progress-rr;
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
   }
@@ -170,9 +176,13 @@
 
 .progressred{background-color:$red;}
 
-@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: $js30-width;}}
-@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: $js30-width;}}
-@keyframes progress-html{0%{width: 0%;} 100%{ width: $js30-width;}}
+@-webkit-keyframes progress-js30{0%{width: 0%;} 100%{ width: $js30-width;}}
+@-moz-keyframes progress-js30{0%{width: 0%;} 100%{ width: $js30-width;}}
+@keyframes progress-js30{0%{width: 0%;} 100%{ width: $js30-width;}}
+
+@-webkit-keyframes progress-rr{0%{width: 0%;} 100%{ width: $rr-width;}}
+@-moz-keyframes progress-rr{0%{width: 0%;} 100%{ width: $rr-width;}}
+@keyframes progress-rr{0%{width: 0%;} 100%{ width: $rr-width;}}
 
 #picto-passions:last-child {
   margin-right: 0;
@@ -217,8 +227,14 @@
   opacity: 0.5;
 }
 
-.height-width-custom {
+.height-width-custom-portfolio {
   height: 800px;
+  width: 100%;
+  padding: 25px 50px;
+  background-color: $blue;
+}
+
+.height-width-custom {
   width: 100%;
   padding: 25px 50px;
   background-color: $blue;
@@ -228,6 +244,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
+  column-gap: 15px;
 }
 
 .img-size {

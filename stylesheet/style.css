@@ -474,30 +474,50 @@
     animation-timing-function: ease-out;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; }
-  .bar-container #progress {
-    -webkit-animation-name: progress-html;
-    animation-name: progress-html;
+  .bar-container #progress-js30 {
+    -webkit-animation-name: progress-js30;
+    animation-name: progress-js30;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s; }
+  .bar-container #progress-rr {
+    -webkit-animation-name: progress-rr;
+    animation-name: progress-rr;
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s; }
 
 .progressred {
   background-color: #DC3444; }
 
-@-webkit-keyframes progress-html {
+@-webkit-keyframes progress-js30 {
   0% {
     width: 0%; }
   100% {
     width: 60%; } }
-@-moz-keyframes progress-html {
+@-moz-keyframes progress-js30 {
   0% {
     width: 0%; }
   100% {
     width: 60%; } }
-@keyframes progress-html {
+@keyframes progress-js30 {
   0% {
     width: 0%; }
   100% {
     width: 60%; } }
+@-webkit-keyframes progress-rr {
+  0% {
+    width: 0%; }
+  100% {
+    width: 0%; } }
+@-moz-keyframes progress-rr {
+  0% {
+    width: 0%; }
+  100% {
+    width: 0%; } }
+@keyframes progress-rr {
+  0% {
+    width: 0%; }
+  100% {
+    width: 0%; } }
 #picto-passions:last-child {
   margin-right: 0; }
 
@@ -531,8 +551,13 @@
   border-top: 1px solid #DBE2E8;
   opacity: 0.5; }
 
-.height-width-custom {
+.height-width-custom-portfolio {
   height: 800px;
+  width: 100%;
+  padding: 25px 50px;
+  background-color: #002C47; }
+
+.height-width-custom {
   width: 100%;
   padding: 25px 50px;
   background-color: #002C47; }
@@ -540,7 +565,8 @@
 .row-custom {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; }
+  margin-right: -15px;
+  column-gap: 15px; }
 
 .img-size {
   height: auto;
