@@ -3,6 +3,8 @@
 @import 'components/navbar.scss';
 @import 'components/banner.scss';
 @import 'components/content.scss';
+@import 'components/variables.scss';
+
 
 html {
   scroll-behavior: smooth;
@@ -10,11 +12,11 @@ html {
 
 body {
   font-family: 'Sen', sans-serif;
-  background-color: #DBE2E8;
+  background-color: $white;
 }
 
 h1, h2 {
-  color: #DBE2E8;
+  color: $white;
   font-weight: 400 !important;
 }
 
@@ -51,31 +53,30 @@ h4 {
   box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
 }
 
-a p {
-  color: #DBE2E8;
-}
-
-
 a {
   text-decoration: none !important;
 }
 
 a:hover {
   text-decoration: none !important;
+  h4 {
+    color: $dark-red;
+    transform: translateY(-3px);
+  }
 }
 
 .red-color {
-  color: #DC3444;
+  color: $red;
 }
 
 .white-color {
-  color: #DBE2E8;
+  color: $white;
 }
 
 .contacts a:hover {
   text-decoration: none;
   path {
-    fill: #DC3444;
+    fill: $red;
   }
 }
 

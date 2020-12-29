@@ -54,9 +54,14 @@
 
 .navbar-links h4 {
   color: #DC3444;
-  margin: 0 24px;
   letter-spacing: 2px;
   font-weight: 400 !important; }
+  @media (min-width: 540px) and (max-width: 746px) {
+    .navbar-links h4 {
+      margin: 0 10px; } }
+  @media (min-width: 746px) {
+    .navbar-links h4 {
+      margin: 0 24px; } }
 
 .navbar-links h3 {
   color: #DC3444;
@@ -74,6 +79,9 @@
 
 .navbar-links h4:hover:after {
   transform: scaleX(0.9); }
+
+.active-btns:hover h4 {
+  color: #DC3444; }
 
 .logo {
   display: flex;
@@ -101,12 +109,16 @@
   #btn-hire:hover h3 {
     color: #DBE2E8; }
 
-@media (max-width: 540px) {
+@media (max-width: 746px) {
   #about-btn {
     display: none; } }
 
-@media (max-width: 540px) {
+@media (max-width: 746px) {
   #portfolio-btn {
+    display: none; } }
+
+@media (max-width: 746px) {
+  #progression-btn {
     display: none; } }
 
 .bounce {
@@ -212,6 +224,9 @@
   width: 35px;
   margin-bottom: 18px; }
 
+#after-effect {
+  color: #DBE2E8; }
+
 #after-effect:after {
   display: block;
   content: '';
@@ -246,10 +261,10 @@
     #avatar {
       transition: 0.2s ease;
       path {
-        fill: #DC3444
+        fill: $red
       }
       circle {
-        fill: #DC3444;
+        fill: $red;
       }
     }
   }*/ }
@@ -564,10 +579,10 @@ figure.controls {
   width: 80% !important; }
 
 #carouselExampleIndicators {
-  transition: 0.2s; }
+  transition: 0.3s; }
   #carouselExampleIndicators:hover {
-    transform: scale(1.05);
-    transition: 0.2s; }
+    transform: scale(1.01);
+    transition: 0.3s; }
 
 #icon-skills {
   width: 112px;
@@ -611,8 +626,10 @@ figure.controls {
   border-bottom: solid 2px #002C47;
   background-color: transparent; }
 
-.nav-link:hover p {
-  color: #002C47 !important; }
+.nav-link:hover {
+  transform: translateY(-3px); }
+  .nav-link:hover p {
+    color: #a02935 !important; }
 
 .visible {
   animation: FadeInAbout .9s forwards ease;
@@ -713,14 +730,14 @@ h4 {
 .shadow-box-custom {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
 
-a p {
-  color: #DBE2E8; }
-
 a {
   text-decoration: none !important; }
 
 a:hover {
   text-decoration: none !important; }
+  a:hover h4 {
+    color: #a02935;
+    transform: translateY(-3px); }
 
 .red-color {
   color: #DC3444; }

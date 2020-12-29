@@ -79,9 +79,6 @@ const emailCopy = () => {
       tempInput.select();
       document.execCommand("copy");
       document.body.removeChild(tempInput);
-
-      // event.currentTarget.dataset.originalTitle = "Copied text!";
-
     });
 
   });
@@ -93,24 +90,61 @@ const activeClickNavbar = () => {
     btn.addEventListener('click', (event) => {
       const aboutTab = document.getElementById('about-tab');
       const portfolioTab = document.getElementById('portfolio-tab');
+      const progressionTab = document.getElementById('progression-tab');
 
       const aboutPane = document.getElementById('about');
       const portfolioPane = document.getElementById('portfolio');
-      console.log(event.currentTarget);
+      const progressionPane = document.getElementById('progression');
+      // console.log(event.currentTarget);
 
-      if(event.currentTarget.id=='portfolio-btn' && aboutTab.classList.contains('active')) {
-        aboutTab.classList.remove('active');
-        portfolioTab.classList.add('active');
+      switch (event.currentTarget.id) {
+        case 'portfolio-btn':
+          portfolioTab.classList.add('active');
+          portfolioPane.classList.add('active');
 
-        aboutPane.classList.remove('active');
-        portfolioPane.classList.add('active');
+          aboutTab.classList.remove('active');
+          aboutPane.classList.remove('active');
 
-      } else if (((event.currentTarget.id=='about-btn')||(event.currentTarget.id=='second-about')) && portfolioTab.classList.contains('active')) {
-        portfolioTab.classList.remove('active');
-        aboutTab.classList.add('active');
+          progressionTab.classList.remove('active');
+          progressionPane.classList.remove('active');
+          break;
 
-        portfolioPane.classList.remove('active');
-        aboutPane.classList.add('active');
+        case 'about-btn':
+          portfolioTab.classList.remove('active');
+          portfolioPane.classList.remove('active');
+
+          aboutTab.classList.add('active');
+          aboutPane.classList.add('active');
+
+          progressionTab.classList.remove('active');
+          progressionPane.classList.remove('active');
+          break;
+
+        case 'second-about':
+          portfolioTab.classList.remove('active');
+          portfolioPane.classList.remove('active');
+
+          aboutTab.classList.add('active');
+          aboutPane.classList.add('active');
+
+          progressionTab.classList.remove('active');
+          progressionPane.classList.remove('active');
+          break;
+
+        case 'progression-btn':
+          portfolioTab.classList.remove('active');
+          portfolioPane.classList.remove('active');
+
+          aboutTab.classList.remove('active');
+          aboutPane.classList.remove('active');
+
+          progressionTab.classList.add('active');
+          progressionPane.classList.add('active');
+          break;
+
+        default:
+          return;
+
       }
     });
   });
@@ -288,7 +322,7 @@ function moveSvg(e) {
 
 
 const js30 = document.querySelector('.progression-percentage-js30');
-console.log(js30.innerText);
+// console.log(js30.innerText);
 var lang = {
   "js30": `${js30.innerText}`
 };

@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .head-content {
   display: flex;
   width: 100%;
@@ -71,10 +73,14 @@
   margin-bottom: 18px;
 }
 
+#after-effect {
+  color: $white;
+}
+
 #after-effect:after {
   display:block;
   content: '';
-  border-bottom: solid 2px #DC3444;
+  border-bottom: solid 2px $red;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
@@ -92,18 +98,18 @@
 }
 
 #picto-contact path {
-  fill: #002C47;
+  fill: $blue;
 }
 
 #picto-contact:hover {
   path {
-    fill: #DC3444;
+    fill: $red;
   }
 }
 
 #computer:hover > svg {
   path {
-    fill: #DC3444;
+    fill: $red;
   }
 }
 
@@ -120,10 +126,10 @@
     #avatar {
       transition: 0.2s ease;
       path {
-        fill: #DC3444
+        fill: $red
       }
       circle {
-        fill: #DC3444;
+        fill: $red;
       }
     }
   }*/
@@ -144,10 +150,10 @@
   opacity: 0.7;
   animation: popup 5s ease;
   path {
-    fill: #DBE2E8;
+    fill: $white;
   }
   circle {
-    fill: #DBE2E8;
+    fill: $white;
   }
 }
 
@@ -162,7 +168,7 @@
   font-size:2em;
   height:50px;
   display:block;
-  color:#DC3444;
+  color:$red;
   margin:auto;
   @media (max-width:960px) {
     text-align: center;

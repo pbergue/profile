@@ -1,4 +1,4 @@
-$js30-width: 60%;
+@import './variables.scss';
 
 
 .nav-buttons {
@@ -16,7 +16,7 @@ $js30-width: 60%;
 .content-custom {
   width: 100%;
   padding: 25px 0;
-  background-color: #002C47;
+  background-color: $blue;
 }
 
 .tabs-custom {
@@ -88,7 +88,7 @@ $js30-width: 60%;
   align-items: center;
   text-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.4);
   h2 {
-    color:  #DC3444;
+    color: $red;
     letter-spacing: 0.2em;
     @media (max-width: 540px) {
       font-size: 32px;
@@ -114,7 +114,7 @@ $js30-width: 60%;
   text-align: justify;
   text-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.4);
   p {
-    color: #DBE2E8;
+    color:$white;
     font-size: 18px;
   }
 }
@@ -168,7 +168,7 @@ $js30-width: 60%;
   }
 }
 
-.progressred{background-color:#DC3444;}
+.progressred{background-color:$red;}
 
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: $js30-width;}}
 @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: $js30-width;}}
@@ -183,7 +183,7 @@ $js30-width: 60%;
 }
 
 .red-target-certif {
-  color: #DC3444;
+  color:$red;
 }
 
 .smaller-red {
@@ -192,7 +192,7 @@ $js30-width: 60%;
 }
 #background:hover {
   .red-target {
-    color: #DC3444;
+    color:$red;
     transition: 0.2s;
   }
 }
@@ -213,7 +213,7 @@ $js30-width: 60%;
 
 .custom-hr {
   width: 50%;
-  border-top: 1px solid #DBE2E8;
+  border-top: 1px solid$white;
   opacity: 0.5;
 }
 
@@ -221,7 +221,7 @@ $js30-width: 60%;
   height: 800px;
   width: 100%;
   padding: 25px 50px;
-  background-color: #002C47;
+  background-color: $blue;
 }
 
 .row-custom {
@@ -240,7 +240,7 @@ $js30-width: 60%;
   position: relative;
 
   h4, h5 {
-    color: #DC3444;
+    color:$red;
     text-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.2);
   }
   p {
@@ -281,10 +281,10 @@ figure.controls {
 }
 
 #carouselExampleIndicators {
-  transition: 0.2s;
+  transition: 0.3s;
   &:hover {
-    transform: scale(1.05);
-    transition: 0.2s;
+    transform: scale(1.01);
+    transition: 0.3s;
   }
 }
 
@@ -309,25 +309,25 @@ figure.controls {
   margin-right: 55px;
   transition: 0.2s;
   path {
-    fill: #DBE2E8;
+    fill:$white;
   }
   circle {
-    fill: #DBE2E8;
+    fill:$white;
   }
 }
 
 #picto-passions:hover {
   transition: 0.2s;
   path {
-    fill: #DC3444;
+    fill:$red;
   }
   circle {
-    fill: #DC3444;
+    fill:$red;
   }
 }
 
 #myTab p {
-  color: #DC3444;
+  color:$red;
   font-size: 28px;
   margin: 0;
 }
@@ -338,13 +338,14 @@ figure.controls {
 }
 
 .nav-item > .nav-link.active {
-  border-bottom: solid 2px #002C47;
+  border-bottom: solid 2px $blue;
   background-color: transparent;
 }
 
 .nav-link:hover {
+  transform: translateY(-3px);
   p {
-    color:  #002C47 !important;
+    color:  $dark-red !important;
   }
 }
 
@@ -385,7 +386,7 @@ figure.controls {
 
 /* effect-shine */
 .tab-content:hover .effect-shine{
-  -webkit-mask-image: linear-gradient(-75deg, rgba($color: #DC3444, $alpha: 0.6) 40%,  #DC3444 60%, rgba($color: #002C47, $alpha: 0.5) 70%);
+  -webkit-mask-image: linear-gradient(-75deg, rgba($color:$red, $alpha: 0.6) 40%, $red 60%, rgba($color: $blue, $alpha: 0.5) 70%);
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
 }
