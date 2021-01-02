@@ -51,7 +51,12 @@
 .link-about {
   display: flex;
   justify-content: flex-end;
-  margin-top: 12%;
+  @media (max-width: 540px) {
+    margin-top: 15%;
+  }
+  @media (min-width: 540px) {
+    margin-top: 12%;
+  }
 }
 
 .language-choice {
@@ -174,7 +179,7 @@
     text-align: center;
   }
 
-  @media (min-width:540px) {
+  @media (min-width:960px) {
     text-align:left;
   }
 }

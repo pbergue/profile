@@ -47,7 +47,7 @@
   align-items: center;
   transition: 1.5s ease-in-out;
   // animation: fadeOut 1s ease-in-out;
-  h1 {
+  h1, h2 {
     display: none;
   }
   #arrow-down {
@@ -62,6 +62,7 @@
   .navbar-links {
     animation: FadeInLateral 1.5s forwards ease-in;
   }
+
 }
 
 .navbar-links {
@@ -79,7 +80,7 @@
     margin: 0 10px;
   }
   @media (min-width: 746px) {
-    margin: 0 24px;
+    margin: 0 20px;
   }
 }
 
@@ -116,6 +117,17 @@
   justify-content: flex-end;
   align-items: center;
   margin-left: 32px;
+}
+
+.new-year {
+  position: sticky;
+  top:-100px;
+  padding: 15px;
+  width: 100vw;
+  border-radius: 3px;
+  color: $red;
+  text-align: center;
+  background-color: rgba($color: $white, $alpha: 0.5);
 }
 
 #logo {
