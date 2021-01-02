@@ -76,10 +76,10 @@
   color: $red;
   letter-spacing: 2px;
   font-weight: 400 !important;
-  @media (min-width: 540px) and (max-width: 746px) {
+  @media (min-width: 540px) and (max-width: 800px) {
     margin: 0 10px;
   }
-  @media (min-width: 746px) {
+  @media (min-width: 800px) {
     margin: 0 20px;
   }
 }

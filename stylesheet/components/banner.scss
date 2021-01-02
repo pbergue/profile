@@ -11,12 +11,12 @@
   letter-spacing: 1px;
   text-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.4);
 
-  @media (max-width:960px) {
+  @media (max-width:1480px) {
     text-align: center;
     padding: 0 5px;
   }
 
-  @media (min-width:540px) {
+  @media (min-width:1480px) {
     margin-right: 10%;
   }
 }
@@ -179,9 +179,6 @@
     text-align: center;
   }
 
-  @media (min-width:960px) {
-    text-align:left;
-  }
 }
 .console-underscore {
    display:inline-block;
