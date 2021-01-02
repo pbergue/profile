@@ -38,7 +38,7 @@
   justify-content: space-between;
   align-items: center;
   transition: 1.5s ease-in-out; }
-  .navbar-custom h1, .navbar-custom h2 {
+  .navbar-custom h1, .navbar-custom h2, .navbar-custom h4 {
     display: none; }
   .navbar-custom #arrow-down {
     display: none; }
