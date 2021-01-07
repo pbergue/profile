@@ -519,17 +519,17 @@
   0% {
     width: 0%; }
   100% {
-    width: 0%; } }
+    width: 30%; } }
 @-moz-keyframes progress-rr {
   0% {
     width: 0%; }
   100% {
-    width: 0%; } }
+    width: 30%; } }
 @keyframes progress-rr {
   0% {
     width: 0%; }
   100% {
-    width: 0%; } }
+    width: 30%; } }
 #picto-passions:last-child {
   margin-right: 0; }
 
