@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 
 .full-width {
@@ -24,6 +24,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  opacity: 0;
 }
 
 .skills {
@@ -213,12 +214,14 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+  padding: 10px 0;
   overflow: hidden;
   width: 100%;
 }
 
 .second-line {
   overflow: hidden;
+  padding: 10px 0;
 }
 
 .custom-hr {
@@ -308,16 +311,25 @@ figure.controls {
 #icon-skills {
   width: 112px;
   margin: 0 10px;
+  &:hover {
+    transform: $hover-translate-Y;
+  }
 }
 
 #icon-skills-js {
   width: 87px;
   margin: 15px 15px 0 15px;
+  &:hover {
+    transform: $hover-translate-Y;
+  }
 }
 
 #rails-logo {
   width: 284px;
   height: 107px;
+  &:hover {
+    transform: $hover-translate-Y;
+  }
 }
 
 #picto-passions {
@@ -356,6 +368,7 @@ figure.controls {
 
 .nav-item > .nav-link.active {
   background-color: transparent;
+  color: $blue;
   &::after {
     content: "";
     display: block;
@@ -364,7 +377,7 @@ figure.controls {
     transform: scaleX(0.9)
   }
   &:hover {
-    transform: translateY(0);
+    transform: $hover-translate-Y;
   }
   &:hover::after {
     transform: scaleX(0.9);
@@ -385,7 +398,7 @@ figure.controls {
 }
 
 .nav-link:hover {
-  transform: translateY(-3px);
+  transform: $hover-translate-Y;
 }
 
 .visible {
@@ -443,6 +456,7 @@ figure.controls {
 
 .passions:hover #picto-passions {
   animation: kaboom 1s ease alternate 4;
+  transform: $hover-translate-Y;
   &:nth-child(1) {
     animation-delay: 0.1s;
   }

@@ -95,6 +95,7 @@
 .navbar-links h4:after {
   display:block;
   content: '';
+  padding-bottom: 10px;
   border-bottom: solid 2px $red;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
@@ -104,9 +105,12 @@
   transform: scaleX(0.9);
 }
 
-.active-btns:hover {
-  h4 {
-    color: $red;
+.active-btns {
+  margin-top: 10px;
+  &:hover {
+    h4 {
+      color: $red;
+    }
   }
 }
 

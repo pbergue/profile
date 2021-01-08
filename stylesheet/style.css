@@ -76,6 +76,7 @@
 .navbar-links h4:after {
   display: block;
   content: '';
+  padding-bottom: 10px;
   border-bottom: solid 2px #DC3444;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out; }
@@ -83,8 +84,10 @@
 .navbar-links h4:hover:after {
   transform: scaleX(0.9); }
 
-.active-btns:hover h4 {
-  color: #DC3444; }
+.active-btns {
+  margin-top: 10px; }
+  .active-btns:hover h4 {
+    color: #DC3444; }
 
 .logo {
   display: flex;
@@ -179,7 +182,8 @@
 .head-content {
   display: flex;
   width: 100%;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 60px; }
 
 .title-banner {
   margin-bottom: 4%;
@@ -231,7 +235,7 @@
 .language-choice {
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 2vw; }
+  padding: 0 2vw; }
 
 .pictos-lang {
   opacity: 0.7; }
@@ -350,7 +354,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 0; }
+  margin-bottom: 40px; }
 
 .full-width {
   width: 100%; }
@@ -364,7 +368,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  opacity: 0; }
 
 .skills {
   display: flex;
@@ -552,11 +557,13 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+  padding: 10px 0;
   overflow: hidden;
   width: 100%; }
 
 .second-line {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 10px 0; }
 
 .custom-hr {
   width: 50%;
@@ -628,14 +635,20 @@ figure.controls {
 #icon-skills {
   width: 112px;
   margin: 0 10px; }
+  #icon-skills:hover {
+    transform: translateY(-3px); }
 
 #icon-skills-js {
   width: 87px;
   margin: 15px 15px 0 15px; }
+  #icon-skills-js:hover {
+    transform: translateY(-3px); }
 
 #rails-logo {
   width: 284px;
   height: 107px; }
+  #rails-logo:hover {
+    transform: translateY(-3px); }
 
 #picto-passions {
   width: 85px;
@@ -664,7 +677,8 @@ figure.controls {
   border: none; }
 
 .nav-item > .nav-link.active {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #002C47; }
   .nav-item > .nav-link.active::after {
     content: "";
     display: block;
@@ -672,7 +686,7 @@ figure.controls {
     border-bottom: solid 2px #002C47;
     transform: scaleX(0.9); }
   .nav-item > .nav-link.active:hover {
-    transform: translateY(0); }
+    transform: translateY(-3px); }
   .nav-item > .nav-link.active:hover::after {
     transform: scaleX(0.9); }
 
@@ -732,7 +746,8 @@ figure.controls {
   to {
     -webkit-mask-position: -50%; } }
 .passions:hover #picto-passions {
-  animation: kaboom 1s ease alternate 4; }
+  animation: kaboom 1s ease alternate 4;
+  transform: translateY(-3px); }
   .passions:hover #picto-passions:nth-child(1) {
     animation-delay: 0.1s; }
   .passions:hover #picto-passions:nth-child(2) {

@@ -18,7 +18,7 @@ class About {
 
 var options = {
     rootMargin: '0px',
-    threshold: 0.4
+    threshold: 0.5
 }
 
 function callback(entries) {
