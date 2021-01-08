@@ -37,14 +37,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 1.5s ease-in-out; }
+  transition: 1.5s ease-out; }
   .navbar-custom h1, .navbar-custom h2, .navbar-custom h4 {
     display: none; }
   .navbar-custom #arrow-down {
     display: none; }
   .navbar-custom .logo {
     animation: FadeInLateral 1.5s forwards ease-in; }
-    .navbar-custom .logo h1 {
+    .navbar-custom .logo h1, .navbar-custom .logo h4 {
       display: none; }
   .navbar-custom .navbar-links {
     animation: FadeInLateral 1.5s forwards ease-in; }

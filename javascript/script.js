@@ -171,29 +171,37 @@ function deployFullHeight() {
   });
 };
 
-// function([string1, string2],target id,[color1,color2])
-const pictosLg = document.querySelectorAll('.pictos-lang');
-const frenchSelectors = document.querySelectorAll('.french');
-const englishSelectors = document.querySelectorAll('.english');
 
-pictosLg.forEach(picto => picto.addEventListener('click', event => {
-  console.log(event.currentTarget);
-  if (event.currentTarget.id === 'fr') {
-    frenchSelectors.forEach(french => {
-      french.classList.add('chosen-version');
-    });
-    englishSelectors.forEach(english => {
-      english.classList.remove('chosen-version');
-    });
-  } else if (event.currentTarget.id === 'en') {
-    frenchSelectors.forEach(french => {
-      french.classList.remove('chosen-version');
-    });
-    englishSelectors.forEach(english => {
-      english.classList.add('chosen-version');
-    })
+  const pictosLg = document.querySelectorAll('.pictos-lang');
+  const frenchSelectors = document.querySelectorAll('.french');
+  const englishSelectors = document.querySelectorAll('.english');
+
+  function changeLanguage(eventId) {
+    localStorage.setItem('chosen-language', eventId)
+    if (eventId === 'fr') {
+      frenchSelectors.forEach(french => {
+        french.classList.add('chosen-version');
+      });
+      englishSelectors.forEach(english => {
+        english.classList.remove('chosen-version');
+      });
+    } else if (eventId === 'en') {
+      frenchSelectors.forEach(french => {
+        french.classList.remove('chosen-version');
+      });
+      englishSelectors.forEach(english => {
+        english.classList.add('chosen-version');
+      })
+    }
+  };
+
+  pictosLg.forEach(picto => picto.addEventListener('click', event => {changeLanguage(event.currentTarget.id)}));
+  if (localStorage.getItem('chosen-language')) {
+    changeLanguage(localStorage.getItem('chosen-language'));
   }
-}));
+
+
+
 consoleText(['27 years old', 'Web developer', 'Available', 'Creative', 'Surfer'], 'text-en',['#DBE2E8']);
 consoleTextFr(['27 ans', 'Développeur Web', 'Disponible', 'Créatif', 'Surfeur'], 'text-fr',['#DBE2E8']);
 
