@@ -4,6 +4,7 @@
 @import 'components/banner.scss';
 @import 'components/content.scss';
 @import 'components/variables.scss';
+@import 'components/footer.scss';
 
 
 html {
@@ -12,7 +13,7 @@ html {
 
 body {
   font-family: 'Sen', sans-serif;
-  background-color: $white;
+  background-color: $blue;
 }
 
 h1, h2 {

@@ -6,7 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  padding-top: 60px;
+  background-color: $white;
 }
 
 .full-width {
@@ -15,8 +16,6 @@
 
 .content-custom {
   width: 100%;
-  padding: 25px 0;
-  background-color: $blue;
 }
 
 .tabs-custom {
@@ -27,6 +26,16 @@
   opacity: 0;
 }
 
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+
+
 .skills {
   @media (max-width: 960px) {
     flex-direction: column;
@@ -34,9 +43,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
-  margin-top: 70px;
+  padding: 100px 0;
   opacity: 0;
+  background-color: $blue;
+  p {
+    color: $white;
+  }
 }
 
 .background {
@@ -46,9 +58,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
-  margin-top: 70px;
+  padding: 100px 0;
   opacity: 0;
+  background-color: $white;
+  p {
+    color: $blue;
+  }
 }
 
 .passions {
@@ -58,9 +73,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 130px;
-  margin-top: 130px;
+  padding: 140px 0;
   opacity: 0;
+  background-color: $blue;
+  p {
+    color: $white;
+  }
 }
 
 .certif {
@@ -70,9 +88,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 130px;
-  margin-top: 130px;
+  padding: 100px 0;
   opacity: 0;
+  background-color: $white;
+  p {
+    color: $blue;
+  }
 }
 
 .title {
@@ -115,7 +136,6 @@
   text-align: justify;
   text-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.4);
   p {
-    color:$white;
     font-size: 18px;
   }
 }
@@ -233,13 +253,13 @@
 .height-width-custom-portfolio {
   height: 800px;
   width: 100%;
-  padding: 25px 50px;
+  padding: 25px 50px 100px 50px;
   background-color: $blue;
 }
 
 .height-width-custom {
   width: 100%;
-  padding: 25px 50px;
+  padding: 25px 50px 100px 50px;
   background-color: $blue;
 }
 
@@ -292,7 +312,7 @@
 
 #switch {
   height: auto;
-  width: 40px;
+  height: 24px;
   margin-left: 15px;
 }
 

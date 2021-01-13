@@ -1,0 +1,92 @@
+@import './variables.scss';
+
+.footer {
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    padding-top: 15px;
+    color: rgba($color: $white, $alpha: 0.7);
+    &:hover {
+      color: rgba($color: $white, $alpha: 1);
+    }
+    p {
+      margin-bottom: 0;
+      margin-inline-end:0;
+    }
+  }
+}
+
+
+
+// .footer::before {
+//   content: "";
+//   display: block;
+//   width: 70%;
+//   border-bottom: 1px solid $white;
+// }
+
+// .footer-title::before {
+//   content: "";
+//   display: block;
+//   width: 70%;
+//   border-bottom: 1px solid $white;
+// }
+
+.footer-logo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.footer-logo-item {
+  height: 30px;
+  margin: 0 10px;
+  path {
+    fill: $white;
+  }
+  &:hover {
+    path{
+      fill: $red;
+    }
+  }
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  @media (min-width: 1140px) {
+    padding-bottom: 16.6%;
+  }
+  @media (max-width: 1140px) {
+    padding-bottom: 22.6%;
+  }
+}
+
+// #footer-svg {
+//   width: 100%;
+//   position: relative;
+//   height: 100%;
+// }
+
+#footer-svg {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
