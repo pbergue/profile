@@ -587,7 +587,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: justify; }
+  text-align: center; }
   @media (min-width: 960px) {
     .description-passions {
       width: 50%; } }
@@ -682,14 +682,20 @@
 
 .first-line {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 15px;
   padding: 10px 0;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .second-line {
+  display: flex;
+  padding: 10px 0;
+  overflow: hidden;
+  width: 100%;
+  text-align: center; }
+
+.rails-line {
   overflow: hidden;
   padding: 10px 0; }
 
@@ -761,15 +767,19 @@ figure.controls {
     transition: 0.3s; }
 
 #icon-skills {
-  width: 76%;
-  margin: 0 10px; }
+  width: 70%; }
   #icon-skills:hover {
     transform: translateY(-3px); }
 
 #icon-skills-js {
-  width: 76%;
+  width: 60%;
   margin: 15px 15px 0 15px; }
   #icon-skills-js:hover {
+    transform: translateY(-3px); }
+
+#icon-skills-redux {
+  width: 50%; }
+  #icon-skills-redux:hover {
     transform: translateY(-3px); }
 
 #rails-logo {
@@ -779,8 +789,7 @@ figure.controls {
     transform: translateY(-3px); }
 
 #picto-passions {
-  width: 63%;
-  margin-right: 55px;
+  width: 50%;
   transition: 0.2s; }
   #picto-passions path {
     fill: #DBE2E8; }

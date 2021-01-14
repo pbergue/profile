@@ -241,7 +241,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: center;
 }
 
 .progression-img {
@@ -322,15 +322,22 @@
 
 .first-line {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 15px;
   padding: 10px 0;
   overflow: hidden;
   width: 100%;
+  text-align: center;
 }
 
 .second-line {
+  display: flex;
+  padding: 10px 0;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+.rails-line {
   overflow: hidden;
   padding: 10px 0;
 }
@@ -420,16 +427,22 @@ figure.controls {
 }
 
 #icon-skills {
-  width: 76%;
-  margin: 0 10px;
+  width: 70%;
   &:hover {
     transform: $hover-translate-Y;
   }
 }
 
 #icon-skills-js {
-  width: 76%;
+  width: 60%;
   margin: 15px 15px 0 15px;
+  &:hover {
+    transform: $hover-translate-Y;
+  }
+}
+
+#icon-skills-redux {
+  width: 50%;
   &:hover {
     transform: $hover-translate-Y;
   }
@@ -444,8 +457,7 @@ figure.controls {
 }
 
 #picto-passions {
-  width: 63%;
-  margin-right: 55px;
+  width: 50%;
   transition: 0.2s;
   path {
     fill:$white;
