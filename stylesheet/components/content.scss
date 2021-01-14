@@ -40,16 +40,66 @@
   @media (max-width: 960px) {
     flex-direction: column;
   };
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 0;
   opacity: 0;
   background-color: $blue;
+
   p {
     color: $white;
   }
+
+  .icons-skills span{
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    padding: 10px;
+    margin-left: -100px;
+    margin-top: -58px;
+    color:$white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid $red;
+    background: rgba($color: $blue, $alpha: 1);
+    text-indent: 0px;
+    border-radius: 5px;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    -webkit-transform: translate(35px) rotate(25deg) scale(1.5);
+    -moz-transform: translate(35px) rotate(25deg) scale(1.5);
+    -o-transform: translate(35px) rotate(25deg) scale(1.5);
+    -ms-transform: translate(35px) rotate(25deg) scale(1.5);
+    transform: translate(35px) rotate(25deg) scale(1.5);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 9999;
+  }
+
+  .bottom-tooltip span{
+    margin-left: -100px;
+    margin-top: 115px;
+  }
+
+
+  .icons-skills:hover span {
+    visibility: visible;
+    -webkit-transform: translate(0px) rotate(0deg) scale(1);
+    -moz-transform: translate(0px) rotate(0deg) scale(1);
+    -o-transform: translate(0px) rotate(0deg) scale(1);
+    -ms-transform: translate(0px) rotate(0deg) scale(1);
+    transform: translate(0px) rotate(0deg) scale(1);
+    opacity: 1;
+  }
 }
+
 
 .background {
   @media (max-width: 960px) {
@@ -78,6 +128,47 @@
   background-color: $blue;
   p {
     color: $white;
+  }
+
+  .pictos-passions span{
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    padding: 10px;
+    margin-left: -100px;
+    margin-top: -58px;
+    color:$white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid $red;
+    background: rgba($color: $blue, $alpha: 1);
+    text-indent: 0px;
+    border-radius: 5px;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    -webkit-transform: translate(35px) rotate(25deg) scale(1.5);
+    -moz-transform: translate(35px) rotate(25deg) scale(1.5);
+    -o-transform: translate(35px) rotate(25deg) scale(1.5);
+    -ms-transform: translate(35px) rotate(25deg) scale(1.5);
+    transform: translate(35px) rotate(25deg) scale(1.5);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 9999;
+  }
+
+  .pictos-passions:hover span {
+    visibility: visible;
+    -webkit-transform: translate(0px) rotate(0deg) scale(1);
+    -moz-transform: translate(0px) rotate(0deg) scale(1);
+    -o-transform: translate(0px) rotate(0deg) scale(1);
+    -ms-transform: translate(0px) rotate(0deg) scale(1);
+    transform: translate(0px) rotate(0deg) scale(1);
+    opacity: 1;
   }
 }
 
