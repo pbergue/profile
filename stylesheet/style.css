@@ -693,7 +693,8 @@
   padding: 10px 0;
   overflow: hidden;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  justify-content: center; }
 
 .rails-line {
   overflow: hidden;
