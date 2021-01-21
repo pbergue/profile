@@ -408,6 +408,19 @@
   }
 }
 
+.stack-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .stack-item {
+    margin: 0 5px 20px 5px;
+  }
+}
+
+.stack-item-logo {
+  height: 35px;
+}
+
 #switch {
   height: auto;
   height: 24px;
@@ -427,14 +440,14 @@ figure.controls {
 }
 
 #icon-skills {
-  width: 70%;
+  width: 64%;
   &:hover {
     transform: $hover-translate-Y;
   }
 }
 
 #icon-skills-js {
-  width: 60%;
+  width: 53%;
   margin: 15px 15px 0 15px;
   &:hover {
     transform: $hover-translate-Y;
@@ -442,7 +455,7 @@ figure.controls {
 }
 
 #icon-skills-redux {
-  width: 50%;
+  width: 40%;
   &:hover {
     transform: $hover-translate-Y;
   }

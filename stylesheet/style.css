@@ -637,32 +637,32 @@
   0% {
     width: 0%; }
   100% {
-    width: 80%; } }
+    width: 100%; } }
 @-moz-keyframes progress-js30 {
   0% {
     width: 0%; }
   100% {
-    width: 80%; } }
+    width: 100%; } }
 @keyframes progress-js30 {
   0% {
     width: 0%; }
   100% {
-    width: 80%; } }
+    width: 100%; } }
 @-webkit-keyframes progress-rr {
   0% {
     width: 0%; }
   100% {
-    width: 70%; } }
+    width: 100%; } }
 @-moz-keyframes progress-rr {
   0% {
     width: 0%; }
   100% {
-    width: 70%; } }
+    width: 100%; } }
 @keyframes progress-rr {
   0% {
     width: 0%; }
   100% {
-    width: 70%; } }
+    width: 100%; } }
 #picto-passions:last-child {
   margin-right: 0; }
 
@@ -752,6 +752,16 @@
   .title-progression h4 {
     margin: 0; }
 
+.stack-list {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .stack-list .stack-item {
+    margin: 0 5px 20px 5px; }
+
+.stack-item-logo {
+  height: 35px; }
+
 #switch {
   height: auto;
   height: 24px;
@@ -767,18 +777,18 @@ figure.controls {
     transition: 0.3s; }
 
 #icon-skills {
-  width: 70%; }
+  width: 64%; }
   #icon-skills:hover {
     transform: translateY(-3px); }
 
 #icon-skills-js {
-  width: 60%;
+  width: 53%;
   margin: 15px 15px 0 15px; }
   #icon-skills-js:hover {
     transform: translateY(-3px); }
 
 #icon-skills-redux {
-  width: 50%; }
+  width: 40%; }
   #icon-skills-redux:hover {
     transform: translateY(-3px); }
 
