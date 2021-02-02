@@ -331,11 +331,13 @@ function moveSvg(e) {
 
 const js30 = document.querySelector('.progression-percentage-js30');
 const rr = document.querySelector('.progression-percentage-rr');
+const cg = document.querySelector('.progression-percentage-cg');
 
 // Needs to change pourcent value also in CSS 'variables.css'
 var lang = {
   "js30": `${js30.innerText}`,
-  "rr": `${rr.innerText}`
+  "rr": `${rr.innerText}`,
+  "cg": `${cg.innerText}`
 };
 
 var multiply = 4;

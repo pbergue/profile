@@ -284,6 +284,12 @@
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
   }
+  #progress-cg{
+    -webkit-animation-name: progress-cg;
+    animation-name: progress-cg;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+  }
 }
 
 .progressred{background-color:$red;}
@@ -295,6 +301,10 @@
 @-webkit-keyframes progress-rr{0%{width: 0%;} 100%{ width: $rr-width;}}
 @-moz-keyframes progress-rr{0%{width: 0%;} 100%{ width: $rr-width;}}
 @keyframes progress-rr{0%{width: 0%;} 100%{ width: $rr-width;}}
+
+@-webkit-keyframes progress-cg{0%{width: 0%;} 100%{ width: $cg-width;}}
+@-moz-keyframes progress-cg{0%{width: 0%;} 100%{ width: $cg-width;}}
+@keyframes progress-cg{0%{width: 0%;} 100%{ width: $cg-width;}}
 
 #picto-passions:last-child {
   margin-right: 0;
@@ -358,7 +368,7 @@
 
 .height-width-custom {
   width: 100%;
-  padding: 25px 50px 100px 50px;
+  padding: 50px 50px 100px 50px;
   background-color: $blue;
 }
 
@@ -366,7 +376,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
-  column-gap: 15px;
 }
 
 .img-size {
